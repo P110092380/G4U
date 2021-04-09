@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
                         <Grid container item xs={8} spacing={1} style = {{ paddingBottom: '10px', paddingLeft:'20px', justifyContent:"center"}}>
                             <h1 className='title'> Restricted Access! </h1>
                             <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
-                            <h2 className='subtitle'>Access to this resource is denied.</h2>
+                            <h2 className='subtitle'>Access to this page is denied.</h2>
                             </Grid>
                         </Grid>
                         <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
