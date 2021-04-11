@@ -45,8 +45,11 @@ const useStyles = makeStyles((theme) => ({
                         <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
                             &nbsp;
                         </Grid>
-                        <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
+                        <Grid container spacing={2} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
                             &nbsp;
+                        </Grid>
+                        <Grid container spacing={2} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
+                        &nbsp;
                         </Grid>
                     </Grid>
                     <Grid container item xs={2} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center"}}>

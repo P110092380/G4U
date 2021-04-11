@@ -17,6 +17,7 @@
      text-align: center;
      font-weight: 500;
   }
+  
   input[type=formText],input[type=formPassword], input[type=formEmail], input[type=formDate], input[type=formItems] select, textarea {
      width: 100%;
      padding: 12px;

@@ -23,11 +23,13 @@ class Login extends React.Component {
             <br/>
             <div>
                 <form action="#"/*just add the php name here*/>
-                    <label className="subtitle">Employee ID</label>
+                    <label className="subtitle">Employee ID &nbsp;</label>
                     <input type="loginText" id="eID" name="eID" value={this.state.eID} onChange={e => this.setState({eID:e.target.value})} />
-                    <label className="subtitle">Password</label>
+                    <label className="subtitle">Password &nbsp;</label>
                     <input type="loginPassword" id="ePassword" name="ePassword" value={this.state.ePassword} onChange={e => this.setState({ePassword:e.target.value})} />
-                    <Link to="/Home" className="btn btn-primary" role="button">Login</Link>
+                    <div>
+                      <Link to="/Home" className="btn btn-primary" role="button">Login</Link>
+                    </div>
                 </form>
           </div>
         </div>
