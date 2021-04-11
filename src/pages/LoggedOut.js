@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
                       &nbsp;
                     </Grid>
                   
-                    <Grid container item xs={8} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center", backgroundColor: "#ededed" }}>
+                    <Grid container item xs={8} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center"}}>
                     
                         <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
                             &nbsp;
@@ -36,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
                             <Grid container item xs={8} spacing={1} style = {{ paddingBottom: '10px',paddingTop:'10px', justifyContent:"center"}}>      
                                 <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
                                     <h1 className='title'> Logged Out </h1>
-                                    <h2 className='subtitle'>Do you wish to log in?</h2>
                                 </Grid>
                                 <form className='form'>
                                     <Link to="/" className="btn btn-primary" role="button">Login</Link>

@@ -18,7 +18,7 @@ class Login extends React.Component {
     
     render() {
       return (
-        <div className="Login">
+        <div className="Form">
             <h1 className="title">Login failed</h1>
             <br/>
             <div>
@@ -29,7 +29,7 @@ class Login extends React.Component {
                     <label className="subtitle">Password &nbsp;</label>
                     <input type="loginPassword" id="ePassword" name="ePassword" value={this.state.ePassword} onChange={e => this.setState({ePassword:e.target.value})} />
                     <div>
-                        <Link to="/Pasword" className="btn btn-primary" role="button">Forgot Password</Link>
+                        <Link to="/Password" className="btn btn-primary" role="button">Forgot Password</Link>
                         &nbsp;
                         <Link to="/Home" className="btn btn-primary" role="button">Login</Link>
                     </div>

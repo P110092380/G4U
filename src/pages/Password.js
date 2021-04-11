@@ -1,73 +1,43 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import './style.css'
+import './Form.css'
 import { Link } from 'react-router-dom';
 
 
-const useStyles = makeStyles((theme) => ({
-    mainGrid: {
-      marginTop: theme.spacing(3),
-    },
-  }));
-
-  export default function Password() {
-    const classes = useStyles();
-  
-    return (
-    <React.Fragment>
-        <Container maxWidth="lg" style={{backgroundColor:" #999999"}}>
-            <main>
-                <div className={classes.root}>
-                    <Grid container spacing={1}>
-                        <Grid container item xs={2} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"left"}}>
-                            &nbsp;
-                        </Grid>
-                        <Grid container item xs={8} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center" }}>
-                            &nbsp;
-                            <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
-                            &nbsp;
-                            </Grid>
-                            <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
-                                &nbsp;
-                            </Grid>
-                            
-                            <Grid container item xs={8} spacing={1} style = {{ paddingBottom: '10px',paddingTop:'10px', justifyContent:"center", backgroundColor:" #D8D8D8"}}>      
-                                <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
-                                <h1 className='title'> Change password</h1>
-                                </Grid>
-                                <form className='form'>
-                                    <div className='form-inputs'>
-                                        <label className='form-label , subtitle'>Employee ID &nbsp;</label>
-                                        <input className='form-input' type='text' name='employeeID'/>
-                                    </div>
-                                    <div className ='form-inputs'>
-                                        <label className='form-label , subtitle'>Enter new password &nbsp;</label>
-                                        <input className='form-input' type='password' name='employeePassword'/>
-                                    </div>
-                                    <div className ='form-inputs'>
-                                        <label className='form-label , subtitle'>Re-enter new password &nbsp;</label>
-                                        <input className='form-input' type='password' name='employeePassword'/>
-                                    </div>
-                                    <Link to="/RequestSent" className="btn btn-primary" role="button">Change password</Link>
-                                </form>
-                            </Grid>
-                            <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
-                                &nbsp;
-                            </Grid>
-                            <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
-                                &nbsp;
-                            </Grid>
-                        </Grid>
-                        <Grid container item xs={2} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center"}}>
-                            &nbsp;
-                        </Grid>
-                    </Grid>
-                </div>
-            </main>         
-        </Container>
-    </React.Fragment>
-    );
+class Login extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        eID: '',
+        newPassword: '',
+        pwConfimred:'',
+      };
+    }
+    handleFormSubmit(event) {
+      event.preventDefault();
+      console.log(this.state)
+    }
+    
+    render() {
+      return (
+        <div className="Form">
+            <h1 className="title">Login</h1>
+            <br/>
+            <div>
+                <form action="#"/*just add the php name here*/>
+                    <label className="subtitle">Employee ID &nbsp;</label>
+                    <input type="loginText" id="eID" name="eID" value={this.state.eID} onChange={e => this.setState({eID:e.target.value})} />
+                    <label className="subtitle">New password &nbsp;</label>
+                    <input type="loginPassword" id="newPassword" name="newPassword" value={this.state.newPassword} onChange={e => this.setState({newPassword:e.target.value})} />                    
+                    <label className="subtitle">Confirm password &nbsp;</label>
+                    <input type="loginPassword" id="pwConfirmed" name="pwconfirmed" value={this.state.pwconfirmed} onChange={e => this.setState({pwconfirmed:e.target.value})} />
+                    <div>
+                      <Link to="/Home" className="btn btn-primary" role="button">Change password</Link>
+                    </div>
+                </form>
+          </div>
+        </div>
+      );
+    }
   }
   
+  export default Login;
