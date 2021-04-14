@@ -35,79 +35,96 @@ const useStyles = makeStyles((theme) => ({
                     <Grid container item xs={4} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center"}}>
                     <div>
                         <img src={USBPowerBank1} className="product" alt="USB Power Bank"/>
-                            <h5 className='subtitle'>USB Power Bank 10000mAH</h5>
-                            <p className='subtitle'>Code</p>
+                            <h5 className='product-title'>USB Power Bank 10000mAH</h5>
+                            <p className='product-info'>Code: PWR41</p>
                         </div>
-                        <select>
+                        <select className='supplier-info'>
                             <option selected value="supplier">Choose Supplier</option>
-                            <option value="supplier 1">Supplier 1</option>
-                            <option value="supplier 2">Supplier 2</option>
+                            <option value="PWR41_BI">BI, £9.95, 5 days</option>
+                            <option value="PWR41_BS">BS, £9.95, 5 days</option>
                         </select>
-
+                        <div className="btn product-button" role="button">Add to order</div>
                     </Grid>
 
                     <Grid container item xs={4} spacing={1} style = {{ paddingBottom: '10px', paddingLeft:'20px', justifyContent:"center"}}>
                         <div>
                             <img src={USBPowerBank1} className="product" alt="USB Power Bank"/>
-                            <h5 className='subtitle'>USB Power Bank 20000mAH</h5>
-                            <p className='subtitle'>£9.99</p>
-                        </div>    
-                        <select>
-                          <option selected value="supplier">Choose Supplier</option>
-                          <option value="supplier1">Supplier 1</option>
-                          <option value ="supplier2">Supplier 2</option>
-                        </select>  
+                            <h5 className='product-title'>USB Power Bank 20000mAH</h5>
+                            <p className='product-info'>Code: PWR43</p>
+                        </div>
+                        <select className='supplier-info'>
+                            <option selected value="supplier">Choose Supplier</option>
+                            <option value="PWR43_BI">BI, £18.99, 5 days</option>
+                            <option value="PWR43_BS">BS, £18.64, 5 days</option>
+                        </select>
+                        <div className="btn product-button" role="button">Add to order</div> 
                     </Grid>
                     <Grid container item xs={4} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center"}}>
                     <div>
                         <img src={USBPowerBank1} className="product" alt="USB Power Bank"/>
-                            <h5 className='subtitle'>USB Power Bank 25800mAH</h5>
-                            <p className='subtitle'>£9.99</p>
-                        </div>    
-                        <select>
-                          <option selected value="supplier">Choose supplier</option>
-                          <option value="supplier1">Supplier 1</option>
-                          <option value="supplier2">Supplier 2</option>
+                            <h5 className='product-title'>USB Power Bank 25800mAH</h5>
+                            <p className='product-info'>Code:PWR44</p>
+                        </div> <select className='supplier-info'>
+                            <option selected value="supplier">Choose Supplier</option>
+                            <option value="PWR44_BI">BI, £19.99, 5 days</option>
+                            <option value="PWR44_BS">BS, £19.00, 5 days</option>
                         </select>
+                        <div className="btn product-button" role="button">Add to order</div>
                         
                     </Grid>
                     <Grid container item xs={4} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center"}}>
                     <div>
                         <img src={USBPowerBank1} className="product" alt="USB Power Bank"/>
-                            <h5 className='subtitle'>USB Power Bank 10000mAH</h5>
-                            <p className='subtitle'>£9.99</p>
-                        </div>    
-                        <select>
-                          <option selected value="supplier">Choose supplier</option>
-                          <option value ="supplier">Supplier 1</option>
-                          <option value="supplier">Supplier 2</option>
+                            <h5 className='product-title'>Spider Catcher</h5>
+                            <p className='product-info'>Code:SC01</p>
+                        </div>    <select className='supplier-info'>
+                            <option selected value="supplier">Choose Supplier</option>
+                            <option value="SC01_SH">SH, £1.58, 20 days</option>
+                            <option value="SC01_BS">BS, £1.99, 3 days</option>
                         </select>
+                        <div className="btn product-button" role="button">Add to order</div>
                     </Grid>
                     
                     <Grid container item xs={4} spacing={1} style = {{ paddingBottom: '10px', paddingLeft:'20px', justifyContent:"center"}}>
                         <div>
                             <img src={USBPowerBank1} className="product" alt="USB Power Bank"/>
-                            <h5 className='subtitle'>USB Power Bank 20000mAH</h5>
-                            <p className='subtitle'>£9.99</p>
+                            <h5 className='product-title'>Portable Personal Fan</h5>
+                            <p className='product-info'>Code: PPF03</p>
                         </div>    
-                        <select>
-                          <option selected value="supplier">Choose Supplier</option>
-                          <option value="supplier1">Supplier 1</option>
-                          <option value ="supplier2">Supplier 2</option>
-                        </select>  
+                        <select className='supplier-info'>
+                            <option selected value="supplier">Choose Supplier</option>
+                            <option value="PPF_BI">BI, £5.65, 5 days</option>
+                            <option value="PPF_SH">SH, £4.80, 15 days</option>
+                        </select>
+                        <div className="btn product-button" role="button">Add to order</div>
                     </Grid>
                     
                     <Grid container item xs={4} spacing={1} style = {{ paddingBottom: '10px', paddingLeft:'20px', justifyContent:"center"}}>
                         <div>
                             <img src={USBPowerBank1} className="product" alt="USB Power Bank"/>
-                            <h5 className='subtitle'>USB Power Bank 20000mAH</h5>
-                            <p className='subtitle'>£9.99</p>
+                            <h5 className='product-title'>Star Wars USB Cup Warmer: BB8</h5>
+                            <p className='product-info'>Code: SW08</p>
                         </div>    
-                        <select>
-                          <option selected value="supplier">Choose Supplier</option>
-                          <option value="supplier1">Supplier 1</option>
-                          <option value ="supplier2">Supplier 2</option>
-                        </select>  
+                        <select className='supplier-info'>
+                            <option selected value="supplier">Choose Supplier</option>
+                            <option value="SW_BS">BS, £10.99, 5 days</option>
+                            <option value="SW_BI">BI, £9.99, 4 days</option>
+                            <option value="SW_SH">SH, £9.85, 25 days</option>
+                        </select>
+                        <div className="btn product-button" role="button">Add to order</div>  
+                    </Grid>
+                    <Grid container item xs={4} spacing={1} style = {{ paddingBottom: '10px', paddingLeft:'20px', justifyContent:"center"}}>
+                        <div>
+                            <img src={USBPowerBank1} className="product" alt="USB Power Bank"/>
+                            <h5 className='product-title'>Polariod Play 3D Pen</h5>
+                            <p className='product-info'>Code: POL03</p>
+                        </div>    
+                        <select className='supplier-info'>
+                            <option selected value="supplier">Choose Supplier</option>
+                            <option value="SW">BI, £9.95, 5 days</option>
+                            <option value="PWR_BS">BS, £9.95, 5 days</option>
+                        </select>
+                        <div className="btn product-button" role="button">Add to order</div>  
                     </Grid>
                     <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
                       &nbsp;
