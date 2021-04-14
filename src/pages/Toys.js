@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-  export default function Gadgets() {
+  export default function Toy() {
     const classes = useStyles();
   
     return (
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
                   </Grid>
                   
                   <Grid container item xs={8} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center", backgroundColor: "#ededed" }}>
-                    <h1 className='title'> Gadgets </h1>
+                    <h1 className='title'> Toys</h1>
                     <Grid container spacing={6} className={classes.mainGrid} style = {{paddingTop:'25px', paddingBottom: '50px', justifyContent:"center"}} >
                         </Grid>
                     <Grid container item xs={4} spacing={1} style = {{ paddingBottom: '10px', justifyContent:"center"}}>

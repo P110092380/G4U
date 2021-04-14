@@ -18,7 +18,7 @@ import OrderForm from './pages/OrderForm';
 import Password from './pages/Password';
 import RequestSent from './pages/RequestSent';
 import OrderRequest from './pages/OrderRequest';
-/* import Toys from './pages/Toys': */
+import Toys from './pages/Toys';
 
 function App() {
   return (
@@ -40,7 +40,7 @@ function App() {
             <Route path="/OrderForm" component={OrderForm}/>
             <Route path="/OrderRequest" component={OrderRequest}/>
             <Route path="/Notifications" component={Notifications}/>
-            <Route path="/Toys" />
+            <Route path="/Toys" component={Toys}/>
           </div>
         </Switch>
     </div>
